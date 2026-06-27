@@ -1,0 +1,20 @@
+{
+  "name": "shen-ting-hua-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "sharp@0.33.5": true
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}

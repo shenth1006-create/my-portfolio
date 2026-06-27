@@ -1,0 +1,144 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, getEntry } from 'astro:content';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+  const works = await getCollection('works');
+  return works.map(work => ({ params: { slug: work.slug } }));
+}
+
+const { slug } = Astro.params;
+const entry = await getEntry('works', slug!);
+if (!entry) return Astro.redirect('/works');
+
+const { data } = entry;
+const images = data.images;
+const heroImage = data.coverImage || images[0];
+const restImages = images.filter(img => img !== heroImage);
+
+function splitParagraphs(text?: string) {
+  if (!text) return [];
+  return text.split(/\n\n+/).map(p => p.trim()).filter(Boolean);
+}
+---
+
+<Layout title={data.titleEn} description={data.descriptionEn?.slice(0, 160)}>
+  <article class="work-detail">
+
+    <header class="work-detail__header">
+      <h1 class="work-detail__title-en">{data.titleEn}</h1>
+      <p class="work-detail__title-zh">{data.titleZh}</p>
+      <div class="work-detail__info">
+        {(data.yearDisplay || data.year) && (
+          <span>{data.yearDisplay || data.year}</span>
+        )}
+        {data.medium && <span>{data.medium}</span>}
+        {data.mediumEn && data.mediumEn !== data.medium && (
+          <span>{data.mediumEn}</span>
+        )}
+      </div>
+    </header>
+
+    {/* Hero image */}
+    {heroImage && (
+      <div class="gallery-hero">
+        <img src={`/images/${heroImage}`} alt={data.titleEn} />
+      </div>
+    )}
+
+    {/* Remaining images grid */}
+    {restImages.length > 0 && (
+      <div class="gallery-grid">
+        {restImages.map(img => (
+          <img src={`/images/${img}`} alt={data.titleEn} loading="lazy" />
+        ))}
+      </div>
+    )}
+
+    {/* Bilingual description */}
+    {(data.descriptionZh || data.descriptionEn) && !data.subworks && (
+      <div class="bilingual">
+        {data.descriptionZh && (
+          <div class="bilingual__zh">
+            {splitParagraphs(data.descriptionZh).map(p => <p>{p}</p>)}
+          </div>
+        )}
+        {data.descriptionEn && (
+          <div class="bilingual__en">
+            {splitParagraphs(data.descriptionEn).map(p => <p>{p}</p>)}
+          </div>
+        )}
+      </div>
+    )}
+
+    {/* Exhibition overview (when there are subworks) */}
+    {data.subworks && (data.descriptionZh || data.descriptionEn) && (
+      <div class="bilingual">
+        {data.descriptionZh && (
+          <div class="bilingual__zh">
+            {splitParagraphs(data.descriptionZh).map(p => <p>{p}</p>)}
+          </div>
+        )}
+        {data.descriptionEn && (
+          <div class="bilingual__en">
+            {splitParagraphs(data.descriptionEn).map(p => <p>{p}</p>)}
+          </div>
+        )}
+      </div>
+    )}
+
+    {/* External link */}
+    {data.externalLink && (
+      <a
+        href={data.externalLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="external-link"
+      >
+        Read more ↗
+      </a>
+    )}
+
+    {/* Subworks */}
+    {data.subworks?.map(sub => {
+      return (
+        <section class="subwork">
+          <div class="subwork__header">
+            <h2 class="subwork__title">{sub.titleEn}</h2>
+            {sub.titleZh && <p class="subwork__title-zh">{sub.titleZh}</p>}
+            <p class="subwork__medium">
+              {sub.year && <span>{sub.year}&nbsp;&nbsp;</span>}
+              {sub.mediumZh && <span>{sub.mediumZh}&nbsp;&nbsp;</span>}
+              {sub.mediumEn && <span>{sub.mediumEn}</span>}
+            </p>
+          </div>
+
+          {sub.images.length > 0 && (
+            <div class={`subwork__gallery${sub.images.length === 1 ? ' subwork__gallery--single' : ''}`}>
+              {sub.images.map(img => (
+                <img src={`/images/${img}`} alt={sub.titleEn} loading="lazy" />
+              ))}
+            </div>
+          )}
+
+          {(sub.descriptionZh || sub.descriptionEn) && (
+            <div class="bilingual">
+              {sub.descriptionZh && (
+                <div class="bilingual__zh">
+                  {splitParagraphs(sub.descriptionZh).map(p => <p>{p}</p>)}
+                </div>
+              )}
+              {sub.descriptionEn && (
+                <div class="bilingual__en">
+                  {splitParagraphs(sub.descriptionEn).map(p => <p>{p}</p>)}
+                </div>
+              )}
+            </div>
+          )}
+        </section>
+      );
+    })}
+
+  </article>
+</Layout>

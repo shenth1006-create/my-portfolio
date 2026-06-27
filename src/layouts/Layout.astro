@@ -1,0 +1,159 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Shen Ting-Hua',
+  description = 'Shen Ting-Hua — artist working across ceramics, glass, and mixed media.',
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>{title === 'Shen Ting-Hua' ? title : `${title} — Shen Ting-Hua`}</title>
+  </head>
+  <body>
+    <nav class="site-nav">
+      <a href="/" class="site-nav__name">
+        沈庭華<span>/</span>Shen Ting-Hua
+      </a>
+      <ul class="site-nav__links">
+        <li>
+          <a href="/information" aria-current={currentPath === '/information' ? 'page' : undefined}>
+            Information
+          </a>
+        </li>
+        <li>
+          <a href="/works" aria-current={currentPath === '/works' ? 'page' : undefined}>
+            Works
+          </a>
+        </li>
+        <li>
+          <a href="/residency" aria-current={currentPath === '/residency' ? 'page' : undefined}>
+            Residency
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <span>沈庭華 Shen Ting-Hua</span>
+      <span>shenth1006@gmail.com</span>
+    </footer>
+
+    <!-- Lightbox overlay -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+      <button id="lightbox-close" aria-label="Close">&#x2715;</button>
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+
+    <style>
+      #lightbox {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.93);
+        z-index: 9999;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        cursor: zoom-out;
+      }
+      #lightbox.open {
+        display: flex;
+      }
+      #lightbox-img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+        cursor: default;
+        display: block;
+        /* subtle fade-in */
+        animation: lb-in 0.18s ease;
+      }
+      @keyframes lb-in {
+        from { opacity: 0; transform: scale(0.97); }
+        to   { opacity: 1; transform: scale(1); }
+      }
+      #lightbox-close {
+        position: fixed;
+        top: 1.25rem;
+        right: 1.5rem;
+        background: none;
+        border: none;
+        color: rgba(255,255,255,0.6);
+        font-size: 1.4rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        line-height: 1;
+        transition: color 0.15s;
+        z-index: 10000;
+      }
+      #lightbox-close:hover {
+        color: #fff;
+      }
+    </style>
+
+    <script>
+      (function () {
+        const lb    = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        const lbClose = document.getElementById('lightbox-close');
+        if (!lb || !lbImg) return;
+
+        function openLightbox(src, alt) {
+          lbImg.src = src;
+          lbImg.alt = alt || '';
+          lb.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+          lb.classList.remove('open');
+          document.body.style.overflow = '';
+          // clear src after transition so it doesn't flash
+          setTimeout(() => { if (!lb.classList.contains('open')) lbImg.src = ''; }, 200);
+        }
+
+        // Activate lightbox on all images inside .gallery-hero, .gallery-grid,
+        // .gallery-single, .subwork__gallery
+        document.querySelectorAll(
+          '.gallery-hero img, .gallery-grid img, .gallery-single img, .subwork__gallery img'
+        ).forEach(img => {
+          img.style.cursor = 'zoom-in';
+          img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        });
+
+        // Close on overlay background click (not on the image itself)
+        lb.addEventListener('click', e => {
+          if (e.target === lb) closeLightbox();
+        });
+
+        // Close button
+        lbClose.addEventListener('click', closeLightbox);
+
+        // Close on ESC
+        document.addEventListener('keydown', e => {
+          if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
+        });
+
+        // Mobile: prevent accidental scroll-close; single tap on image does nothing,
+        // tap on overlay background closes (handled by the click listener above)
+      })();
+    </script>
+  </body>
+</html>

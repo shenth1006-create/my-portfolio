@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Information">
+  <div class="info-page">
+
+    <!-- Bio: Chinese first, then English -->
+    <div class="info-bio-stacked">
+      <div class="info-bio-stacked__zh">
+        <p>
+          沈庭華，1997，台北藝術大學美術學系碩士，以平面繪畫、版畫、陶塑等為主要創作媒材，
+          取材大多於生活與自然的觀察，透過細微的感知將這些媒材加以闡述及想像，
+          將細碎的感受擴增至作品之中，題材擴及植物、地質、水文等面向，
+          探索社會中人造物之介入狀態，回應人造物及自然產物間的矛盾關係，
+          透過個人的感知經驗與材質觀察，試圖紀錄與保留即將消逝的事物。
+        </p>
+      </div>
+      <div class="info-bio-stacked__en">
+        <p>
+          Shen, Ting-Hua (b. 1997, Taipei, Taiwan) works across ceramics, glass, and mixed media
+          to explore the transformation of natural materials and their relation to geological and
+          oceanic phenomena. Her practice draws from subtle observations of drifting, solidifying,
+          and regeneration, translating temporal and spatial experiences into material forms.
+        </p>
+        <p>
+          In 2025, Shen presented her solo exhibition <em>Colors from the Flames</em> at ISland
+          Art Space, Taipei, which continued her investigation into the alchemical transformation
+          of materials through fire. The previous year, her exhibition <em>Gathering the Distance</em>
+          at the same venue extended her research on volcanic pumice and drifting matter, exploring
+          how geological and oceanic movements connect distant landscapes and bodily experiences.
+        </p>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="info-section">
+      <div class="info-section__label">Education<br />學歷</div>
+      <div class="info-section__content">
+        <div class="info-block">
+          <ul>
+            <li>台北藝術大學美術學系碩士版畫組，台北，台灣</li>
+            <li>台北藝術大學美術學系學士版畫組，台北，台灣</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <ul>
+            <li>M.F.A., Department of Fine Arts (Printmaking), Taipei National University of the Arts</li>
+            <li>B.F.A., Department of Fine Arts (Printmaking), Taipei National University of the Arts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solo Exhibitions -->
+    <div class="info-section">
+      <div class="info-section__label">Solo Exhibitions<br />個展</div>
+      <div class="info-section__content">
+        <div class="info-block">
+          <ul>
+            <li><span class="year">2025</span>「土地的變容」，ISland 藝術空間，台北，台灣</li>
+            <li><span class="year">2024</span>「一座遠方」，ISland 藝術空間，台北，台灣</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <ul>
+            <li><span class="year">2025</span>"Colors from the Flames", ISland Art Space, Taipei, Taiwan</li>
+            <li><span class="year">2024</span>"Gathering the Distance", ISland Art Space, Taipei, Taiwan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Group Exhibitions -->
+    <div class="info-section">
+      <div class="info-section__label">Group Exhibitions<br />聯展</div>
+      <div class="info-section__content">
+        <div class="info-block">
+          <ul>
+            <li><span class="year">2024</span>「一個月的琉球」，沖繩縣立藝術大學，沖繩，日本</li>
+            <li><span class="year">2024</span>「Brachiale 藝術節」，維也納，奧地利</li>
+            <li><span class="year">2023</span>「～洪～水～再～氾～濫～」，182art space，台南，台灣</li>
+            <li><span class="year">2023</span>「當代雕塑創作獎」，地下美術館，台北，台灣</li>
+            <li><span class="year">2022</span>「黑金計畫—我們共用一條河」，節點藝術空間，台南，台灣</li>
+            <li><span class="year">2022</span>「壞杯—島島來」，西竹圍之丘，台南，台灣</li>
+            <li><span class="year">2022</span>高雄漾藝術博覽會「很慢・現挽」，駁二藝術特區，高雄，台灣</li>
+            <li><span class="year">2022</span>「春泥｜沃土」，Island 藝術空間，台北，台灣</li>
+            <li><span class="year">2022</span>「漂亮的很好 Pretty Good」，地下美術館，台北，台灣</li>
+            <li><span class="year">2021</span>「人工—白色大地」，寶藏巖國際藝術村，台北，台灣</li>
+            <li><span class="year">2020</span>北藝大美術系第25屆畢業展「台北國際當代一年展」，地下美術館，台北，台灣</li>
+            <li><span class="year">2019</span>「找不到替代文字」，地下美術館，台北，台灣</li>
+            <li><span class="year">2018</span>「有興趣」，地下美術館，台北，台灣</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <ul>
+            <li><span class="year">2024</span>"A Month in Ryukyu", Okinawa Prefectural University of Arts, Okinawa, Japan</li>
+            <li><span class="year">2024</span>"Brachiale" Art Festival, Vienna, Austria</li>
+            <li><span class="year">2023</span>"～洪～水～再～氾～濫～", 182art space, Tainan, Taiwan</li>
+            <li><span class="year">2023</span>"Contemporary Sculpture Lit Pan Prize", Underground Experimental Field, Taipei, Taiwan</li>
+            <li><span class="year">2022</span>"Black Soil — Forgathering by One River", Zit-Dim Art Space, Tainan, Taiwan</li>
+            <li><span class="year">2022</span>"Bad Clay", 西竹圍之丘, Tainan, Taiwan</li>
+            <li><span class="year">2022</span>"YOUNGART — 很慢・現挽", ThePier-2 Art Center, Kaohsiung, Taiwan</li>
+            <li><span class="year">2022</span>"春泥｜沃土", Island Art Space, Taipei, Taiwan</li>
+            <li><span class="year">2022</span>"Pretty Good", Underground Experimental Field, Taipei, Taiwan</li>
+            <li><span class="year">2021</span>"Artificial — White Ground", Treasure Hill Artist Village, Taipei, Taiwan</li>
+            <li><span class="year">2020</span>"Taipei International Contemporary Annual Exhibition", Underground Experimental Field, Taipei, Taiwan</li>
+            <li><span class="year">2019</span>"Alt Text not Found", Underground Experimental Field, Taipei, Taiwan</li>
+            <li><span class="year">2018</span>"Interested", Underground Experimental Field, Taipei, Taiwan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience & Residencies -->
+    <div class="info-section">
+      <div class="info-section__label">Residencies &amp; Experience<br />駐村與其他</div>
+      <div class="info-section__content">
+        <div class="info-block">
+          <ul>
+            <li><span class="year">2025</span>第五屆法藍瓷光點計畫獎學金</li>
+            <li><span class="year">2024</span>沖繩駐地藝術交流，沖繩，日本</li>
+            <li><span class="year">2024</span>Brachiale 駐村，維也納，奧地利</li>
+            <li><span class="year">2022</span>Tolne Gjæstgivergaard Studio 駐村，丹麥</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <ul>
+            <li><span class="year">2025</span>FRANZ Rising Star Project</li>
+            <li><span class="year">2024</span>Okinawa Residency Art Exchange, Okinawa, Japan</li>
+            <li><span class="year">2024</span>Artist in Residence, Brachiale, Vienna, Austria</li>
+            <li><span class="year">2022</span>Artist in Residence, Tolne Gjæstgivergaard Studio, Denmark</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="info-section">
+      <div class="info-section__label">Contact<br />聯絡</div>
+      <div class="info-section__content">
+        <div class="contact-links">
+          <a href="mailto:shenth1006@gmail.com">shenth1006@gmail.com</a>
+          <a
+            href="https://www.instagram.com/huahua100686/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram @huahua100686
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Layout>

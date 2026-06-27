@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import '../styles/global.css';
+
+const allWorks = await getCollection('works');
+const residencies = allWorks
+  .filter(w => w.data.isResidency)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout title="Residency">
+  <div class="page-header">
+    <h1>Residency / 駐村</h1>
+  </div>
+
+  <div class="works-grid">
+    {residencies.map(work => {
+      const cover = work.data.coverImage || work.data.images[0];
+      return (
+        <a href={`/works/${work.slug}`} class="work-card">
+          <div class="work-card__image-wrap">
+            {cover ? (
+              <img
+                src={`/images/${cover}`}
+                alt={work.data.titleEn}
+                loading="lazy"
+              />
+            ) : (
+              <div class="work-card__no-image">No image</div>
+            )}
+          </div>
+          <div class="work-card__meta">
+            <p class="work-card__title-en">{work.data.titleEn}</p>
+            <p class="work-card__title-zh">{work.data.titleZh}</p>
+            <p class="work-card__year">
+              {work.data.yearDisplay || work.data.year}
+            </p>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+</Layout>

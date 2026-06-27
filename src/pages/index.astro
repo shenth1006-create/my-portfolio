@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import '../styles/global.css';
+
+const allWorks = await getCollection('works');
+const mainWorks = allWorks
+  .filter(w => !w.data.isResidency)
+  .sort((a, b) => a.data.order - b.data.order);
+const residencies = allWorks
+  .filter(w => w.data.isResidency)
+  .sort((a, b) => a.data.order - b.data.order);
+
+// Collect all images across all works, each paired with its work slug
+// homeImages overrides images for the home page (use to exclude posters/text graphics)
+const allPhotos: { src: string; alt: string; href: string }[] = [];
+for (const work of [...mainWorks, ...residencies]) {
+  const imgs = work.data.homeImages ?? work.data.images;
+  for (const img of imgs) {
+    allPhotos.push({
+      src: `/images/${img}`,
+      alt: work.data.titleEn,
+      href: `/works/${work.slug}`,
+    });
+  }
+  if (work.data.subworks) {
+    for (const sub of work.data.subworks) {
+      for (const img of sub.images) {
+        allPhotos.push({
+          src: `/images/${img}`,
+          alt: sub.titleEn,
+          href: `/works/${work.slug}`,
+        });
+      }
+    }
+  }
+}
+
+// Fisher-Yates shuffle (build-time, fixed until next build)
+for (let i = allPhotos.length - 1; i > 0; i--) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [allPhotos[i], allPhotos[j]] = [allPhotos[j], allPhotos[i]];
+}
+---
+
+<Layout title="Shen Ting-Hua">
+  <div class="home-masonry">
+    {allPhotos.map(photo => (
+      <a href={photo.href} class="home-masonry__item">
+        <img
+          src={photo.src}
+          alt={photo.alt}
+          loading="lazy"
+        />
+      </a>
+    ))}
+  </div>
+</Layout>
