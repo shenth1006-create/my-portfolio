@@ -17,7 +17,7 @@ descriptionZh: |
 
   影像中的浮球以浮石為原料製成。浮石源自海底火山噴發，是一種在劇烈地質變動中生成、並能隨洋流長距離漂移的火山物質。經由高溫熔融與再製，它從漂浮於海面的自然之物，轉化為一顆中空、透明的玻璃浮球。這一轉化過程使浮石不再只是地質樣本，更成為承載移動、時間與想像的媒介。而那條虛線，也由此成為自然力量在海上短暫浮現、又悄然消逝的痕跡。
 descriptionEn: |
-  Dotted Line on the Sea II continues from previous works, using the waters between Yonaguni Island and Taiwan as its filming ground, placing the camera above the flowing sea between the two places. Taiwan's east coast faces the Pacific Ocean, where the Kuroshio Current flows northward past Yonaguni Island, forming a natural line of connection that is invisible to the naked eye yet in constant motion. This ocean current not only shapes marine ecosystems, but also embodies the natural flow and invisible pathways that cross national boundaries.
+  <em>Dotted Line on the Sea II</em> continues from previous works, using the waters between Yonaguni Island and Taiwan as its filming ground, placing the camera above the flowing sea between the two places. Taiwan's east coast faces the Pacific Ocean, where the Kuroshio Current flows northward past Yonaguni Island, forming a natural line of connection that is invisible to the naked eye yet in constant motion. This ocean current not only shapes marine ecosystems, but also embodies the natural flow and invisible pathways that cross national boundaries.
 
   Yonaguni Island lies approximately 110 kilometers from Taiwan — a borderland where nature and culture intertwine, a threshold site charged with multiple layers of historical and geographical meaning. Through the processes of filming and editing, the work seeks to transform this stretch of sea into a dotted line suspended between reality and imagination — at once a boundary and a connection; at once a separation and a mutual pull.
 

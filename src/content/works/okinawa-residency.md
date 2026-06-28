@@ -17,5 +17,5 @@ order: 40
 descriptionZh: |
   「沖繩駐地創作研究計畫」，走訪2021福德岡之場海底火山爆發後的沖繩，探索當地的玻璃和陶瓷工藝，並延續自身的創作脈絡。成果展覽「一個月的琉球」於8/1～8/5在沖繩藝術大學與師生共同聯展。
 descriptionEn: |
-  The "Okinawa Residency Creative Research Project" involved visiting Okinawa after the 2021 Fukutoku-Okanoba submarine volcano eruption, exploring local glass and ceramic crafts, and continuing my creative trajectory. The resulting exhibition, "One Month in Ryukyu," was a joint exhibition with faculty and students, held from August 1st to August 5th at Okinawa Prefectural University of Arts.
+  The "Okinawa Residency Creative Research Project" involved visiting Okinawa after the 2021 Fukutoku-Okanoba submarine volcano eruption, exploring local glass and ceramic crafts, and continuing my creative trajectory. The resulting exhibition, <em>One Month in Ryukyu</em>, was a joint exhibition with faculty and students, held from August 1st to August 5th at Okinawa Prefectural University of Arts.
 ---

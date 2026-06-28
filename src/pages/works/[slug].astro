@@ -61,12 +61,12 @@ function splitParagraphs(text?: string) {
       <div class="bilingual">
         {data.descriptionZh && (
           <div class="bilingual__zh">
-            {splitParagraphs(data.descriptionZh).map(p => <p>{p}</p>)}
+            {splitParagraphs(data.descriptionZh).map(p => <p set:html={p} />)}
           </div>
         )}
         {data.descriptionEn && (
           <div class="bilingual__en">
-            {splitParagraphs(data.descriptionEn).map(p => <p>{p}</p>)}
+            {splitParagraphs(data.descriptionEn).map(p => <p set:html={p} />)}
           </div>
         )}
       </div>
@@ -77,12 +77,12 @@ function splitParagraphs(text?: string) {
       <div class="bilingual">
         {data.descriptionZh && (
           <div class="bilingual__zh">
-            {splitParagraphs(data.descriptionZh).map(p => <p>{p}</p>)}
+            {splitParagraphs(data.descriptionZh).map(p => <p set:html={p} />)}
           </div>
         )}
         {data.descriptionEn && (
           <div class="bilingual__en">
-            {splitParagraphs(data.descriptionEn).map(p => <p>{p}</p>)}
+            {splitParagraphs(data.descriptionEn).map(p => <p set:html={p} />)}
           </div>
         )}
       </div>
@@ -126,12 +126,12 @@ function splitParagraphs(text?: string) {
             <div class="bilingual">
               {sub.descriptionZh && (
                 <div class="bilingual__zh">
-                  {splitParagraphs(sub.descriptionZh).map(p => <p>{p}</p>)}
+                  {splitParagraphs(sub.descriptionZh).map(p => <p set:html={p} />)}
                 </div>
               )}
               {sub.descriptionEn && (
                 <div class="bilingual__en">
-                  {splitParagraphs(sub.descriptionEn).map(p => <p>{p}</p>)}
+                  {splitParagraphs(sub.descriptionEn).map(p => <p set:html={p} />)}
                 </div>
               )}
             </div>
