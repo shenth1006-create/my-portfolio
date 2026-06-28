@@ -4,13 +4,13 @@ titleEn: "Gathering the Distance — Solo Exhibition"
 yearDisplay: "November 16 – December 8, 2024"
 year: 2024
 images:
-  - gathering-the-distance-02.jpg
-  - gathering-the-distance-03.jpg
-  - gathering-the-distance-04.jpg
+  - gathering-the-distance-02.webp
+  - gathering-the-distance-03.webp
+  - gathering-the-distance-04.webp
 homeImages:
-  - gathering-the-distance-03.jpg
-  - gathering-the-distance-04.jpg
-coverImage: gathering-the-distance-03.jpg
+  - gathering-the-distance-03.webp
+  - gathering-the-distance-04.webp
+coverImage: gathering-the-distance-03.webp
 featured: true
 isExhibition: true
 order: 3
@@ -34,7 +34,7 @@ subworks:
     mediumEn: "Single-channel video, sound installation, 4'07''"
     year: 2025
     images:
-      - another-entrance-01.jpg
+      - another-entrance-01.webp
     descriptionZh: |
       海拔三千公尺的埃特納（Etna）火山上，灰矇矇一片的火山石大地一望無際，讓人一時之間不知身在何處，彷彿來到世界盡頭。凝視著奄奄一息的火山口，忍不住想像著它究竟通往哪個深處，繼續往下又從哪一個口冒出？火山的難以親近總是令人有多重想像，而不可抵達之處更添異空間的幻想。阿塔納修斯‧基歇爾 (Athanasius Kircher) 在1664出版的「地下世界」書中，以插圖展現了他對地底的想像，每個火山口都有藏著自己的火苗，而火苗延伸下是互相串連的，並蔓延了整個地球。2024年的6月，我來到義大利西西里島的埃特納火山，隨後前往伊奧利亞群島尋找火山的蹤跡。這趟旅程中，我意外發現，這裡正是《地心歷險記》中幻想出口的所在地。我希望將這些在遠方的身體與視覺經驗帶回，與過去接觸的事物共振，產生迴響。
 
@@ -51,8 +51,8 @@ subworks:
     mediumEn: "Single-channel video, 01′30″"
     year: 2024
     images:
-      - dotted-line-on-the-sea-01.jpg
-      - dotted-line-on-the-sea-02.jpg
+      - dotted-line-on-the-sea-01.webp
+      - dotted-line-on-the-sea-02.webp
     descriptionZh: |
       大量浮石在海上聚集時稱之為「浮石筏」（Pumice raft），甚至可形成衛星圖上可見的小島，並隨洋流逐漸移動。浮石筏宛如海上的浮島，忽大忽小，並承載著生命，而這幾年來海底火山的躁動，已經為地球孕育出好幾座新的島，但隨著浪、風的力量，四散各處，藉著這樣飄忽不定的概念，以曾經組成過新島嶼的浮石作為主要原料，再製而成玻璃浮球，以它們作為拍攝對象，而在畫面裡，浮球們因為浪的推移，在海面上不停改變著自身的形狀。
     descriptionEn: |
@@ -65,9 +65,9 @@ subworks:
     mediumEn: "Glass, LED, ceramics, volcanic pumice"
     year: 2024
     images:
-      - recreating-the-new-island-01.jpg
-      - recreating-the-new-island-02.jpg
-      - recreating-the-new-island-03.jpg
+      - recreating-the-new-island-01.webp
+      - recreating-the-new-island-02.webp
+      - recreating-the-new-island-03.webp
     descriptionZh: |
       靈感來自日本福德岡之場海底火山爆發形成的浮石小島。以想像撿拾到他國領土為出發點，研究浮石成分，發現其中含有大量玻璃質，與陶瓷釉料和玻璃製作過程相似。通過將浮石作為材料，製作成磁磚和玻璃浮球等，並透過影像裝置呈現技術媒介與真實的遙遠，試圖拼湊遙不可及的自然脈動，呈現對自然力量的探索和想像。
 

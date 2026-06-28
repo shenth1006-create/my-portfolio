@@ -5,14 +5,14 @@ year: 2021
 medium: 陶瓷、影像輸出
 mediumEn: Ceramic, Prints
 images:
-  - white-ground-01.jpg
-  - white-ground-02.jpg
-  - white-ground-03.jpg
-  - white-ground-04.jpg
-  - white-ground-05.jpg
-  - white-ground-06.jpg
-  - white-ground-07.jpg
-coverImage: white-ground-01.jpg
+  - white-ground-01.webp
+  - white-ground-02.webp
+  - white-ground-03.webp
+  - white-ground-04.webp
+  - white-ground-05.webp
+  - white-ground-06.webp
+  - white-ground-07.webp
+coverImage: white-ground-01.webp
 featured: true
 order: 8
 descriptionZh: |

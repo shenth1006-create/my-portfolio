@@ -5,19 +5,19 @@ year: 2022
 medium: 現成物、錄像、影像輸出、聲音裝置
 mediumEn: Video, Rocks, Clay, Sound Installation
 images:
-  - black-soil-01.jpg
-  - black-soil-02.jpg
-  - black-soil-03.jpg
-  - black-soil-04.jpg
-  - black-soil-05.jpg
-  - black-soil-06.jpg
+  - black-soil-01.webp
+  - black-soil-02.webp
+  - black-soil-03.webp
+  - black-soil-04.webp
+  - black-soil-05.webp
+  - black-soil-06.webp
 homeImages:
-  - black-soil-02.jpg
-  - black-soil-03.jpg
-  - black-soil-04.jpg
-  - black-soil-05.jpg
-  - black-soil-06.jpg
-coverImage: black-soil-02.jpg
+  - black-soil-02.webp
+  - black-soil-03.webp
+  - black-soil-04.webp
+  - black-soil-05.webp
+  - black-soil-06.webp
+coverImage: black-soil-02.webp
 featured: false
 isGroupWork: true
 order: 9

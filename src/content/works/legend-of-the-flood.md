@@ -5,15 +5,15 @@ year: 2023
 medium: 現成物、錄像、影像輸出、裝置
 mediumEn: Video, Rocks, Clay, Woods, Installation, Prints
 images:
-  - legend-of-the-flood-01.jpg
-  - legend-of-the-flood-02.jpg
-  - legend-of-the-flood-03.jpg
-  - legend-of-the-flood-04.jpg
+  - legend-of-the-flood-01.webp
+  - legend-of-the-flood-02.webp
+  - legend-of-the-flood-03.webp
+  - legend-of-the-flood-04.webp
 homeImages:
-  - legend-of-the-flood-02.jpg
-  - legend-of-the-flood-03.jpg
-  - legend-of-the-flood-04.jpg
-coverImage: legend-of-the-flood-02.jpg
+  - legend-of-the-flood-02.webp
+  - legend-of-the-flood-03.webp
+  - legend-of-the-flood-04.webp
+coverImage: legend-of-the-flood-02.webp
 featured: false
 isGroupWork: true
 order: 11

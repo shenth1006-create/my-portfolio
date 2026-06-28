@@ -5,16 +5,16 @@ year: 2023
 medium: 陶瓷、玻璃、浮石、錄像、LED
 mediumEn: Ceramic, Glass, Pumice, Video, LED
 images:
-  - new-island-ii-01.jpg
-  - new-island-ii-02.jpg
-  - new-island-ii-03.jpg
-  - new-island-ii-04.jpg
-  - new-island-ii-05.jpg
-  - new-island-ii-06.jpg
-  - new-island-ii-07.jpg
-  - new-island-ii-08.jpg
-  - new-island-ii-09.jpg
-coverImage: new-island-ii-01.jpg
+  - new-island-ii-01.webp
+  - new-island-ii-02.webp
+  - new-island-ii-03.webp
+  - new-island-ii-04.webp
+  - new-island-ii-05.webp
+  - new-island-ii-06.webp
+  - new-island-ii-07.webp
+  - new-island-ii-08.webp
+  - new-island-ii-09.webp
+coverImage: new-island-ii-01.webp
 featured: true
 order: 5
 descriptionZh: |

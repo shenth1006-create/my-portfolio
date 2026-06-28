@@ -5,9 +5,9 @@ year: 2025
 medium: 雙頻道錄像
 mediumEn: Two-channel video
 images:
-  - dotted-line-on-the-sea-ii-01.png
-  - dotted-line-on-the-sea-ii-02.png
-coverImage: dotted-line-on-the-sea-ii-01.png
+  - dotted-line-on-the-sea-ii-01.webp
+  - dotted-line-on-the-sea-ii-02.webp
+coverImage: dotted-line-on-the-sea-ii-01.webp
 featured: true
 order: 2
 descriptionZh: |

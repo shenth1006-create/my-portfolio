@@ -5,11 +5,11 @@ year: 2019
 medium: 陶瓷
 mediumEn: Clay
 images:
-  - withered-01.jpg
-  - withered-02.jpg
-  - withered-03.jpg
-  - withered-04.jpg
-coverImage: withered-01.jpg
+  - withered-01.webp
+  - withered-02.webp
+  - withered-03.webp
+  - withered-04.webp
+coverImage: withered-01.webp
 featured: true
 order: 10
 descriptionZh: |

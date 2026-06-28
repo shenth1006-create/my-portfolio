@@ -6,15 +6,15 @@ yearDisplay: May 2024, Vienna, Austria
 medium: 駐村創作
 mediumEn: Artist Residency
 images:
-  - fade-01.jpg
-  - fade-02.jpg
-  - fade-03.jpg
-  - fade-04.jpg
-  - fade-05.jpg
-  - fade-06.jpg
-  - fade-07.jpg
-  - fade-08.jpg
-coverImage: fade-01.jpg
+  - fade-01.webp
+  - fade-02.webp
+  - fade-03.webp
+  - fade-04.webp
+  - fade-05.webp
+  - fade-06.webp
+  - fade-07.webp
+  - fade-08.webp
+coverImage: fade-01.webp
 featured: false
 isResidency: true
 order: 41

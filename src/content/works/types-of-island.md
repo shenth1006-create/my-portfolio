@@ -5,11 +5,11 @@ year: 2022
 medium: 陶瓷、玻璃、影像輸出
 mediumEn: Ceramic, Glass, Print
 images:
-  - types-of-island-01.jpg
-  - types-of-island-02.jpg
-  - types-of-island-03.jpg
-  - types-of-island-04.jpg
-coverImage: types-of-island-01.jpg
+  - types-of-island-01.webp
+  - types-of-island-02.webp
+  - types-of-island-03.webp
+  - types-of-island-04.webp
+coverImage: types-of-island-01.webp
 featured: false
 order: 7
 descriptionZh: |

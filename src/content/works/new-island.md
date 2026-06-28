@@ -5,10 +5,10 @@ year: 2022
 medium: 陶瓷、玻璃、浮石、錄像、LED
 mediumEn: Ceramic, Glass, Pumice, Video, LED
 images:
-  - new-island-01.png
-  - new-island-02.png
-  - new-island-03.png
-coverImage: new-island-01.png
+  - new-island-01.webp
+  - new-island-02.webp
+  - new-island-03.webp
+coverImage: new-island-01.webp
 featured: true
 order: 6
 descriptionZh: |

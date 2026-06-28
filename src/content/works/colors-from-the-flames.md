@@ -5,9 +5,9 @@ year: 2025
 medium: 陶瓷、火山石
 mediumEn: Ceramic, volcanic stone
 images:
-  - colors-from-the-flames-01.jpg
-  - colors-from-the-flames-02.jpg
-coverImage: colors-from-the-flames-01.jpg
+  - colors-from-the-flames-01.webp
+  - colors-from-the-flames-02.webp
+coverImage: colors-from-the-flames-01.webp
 featured: true
 isExhibition: true
 order: 1

@@ -6,11 +6,11 @@ yearDisplay: July–August 2024, Okinawa, Japan
 medium: 駐地創作研究
 mediumEn: Artist Residency
 images:
-  - one-month-in-ryukyu-01.jpg
-  - one-month-in-ryukyu-02.jpg
-  - one-month-in-ryukyu-03.jpg
-  - one-month-in-ryukyu-04.jpg
-coverImage: one-month-in-ryukyu-01.jpg
+  - one-month-in-ryukyu-01.webp
+  - one-month-in-ryukyu-02.webp
+  - one-month-in-ryukyu-03.webp
+  - one-month-in-ryukyu-04.webp
+coverImage: one-month-in-ryukyu-01.webp
 featured: false
 isResidency: true
 order: 40
