@@ -32,6 +32,7 @@ const works = defineCollection({
     isResidency: z.boolean().default(false),
     subworks: z.array(subworkSchema).optional(),
     externalLink: z.string().optional(),
+    externalLinkLabel: z.string().optional(),
   }),
 });
 

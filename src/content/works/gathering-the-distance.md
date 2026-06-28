@@ -27,6 +27,7 @@ descriptionEn: |
 
   The current exhibition, <em>Gathering the Distance</em>, connects past works with new experiences gained during travels to Italy and Okinawa. Compared to my earlier, more passive collection of fragments from afar, this time I actively ventured to places I had never visited before. Ceramics and clay sculpture have long been my primary creative media, and the natural materials I collect often merge with the pottery-making process. The composition of volcanic rocks is similar to ceramic glazes, and the temperatures at which lava erupts are close to those used in firing ceramics. Both are derived from the Earth's internal forces, producing diverse materials under varying conditions. As I cataloged and compared these stones, I suddenly realized: they no longer feel so distant.
 externalLink: "https://talks.taishinart.org.tw/talks/84/38918"
+externalLinkLabel: "台新藝論紛紛 Artalks｜一座浮島的誕生與消失——沈庭華個展《一座遠方》"
 subworks:
   - titleZh: 另一座口
     titleEn: Another Entrance
