@@ -1,6 +1,6 @@
 ---
 titleZh: 黑金計畫－我們共用一條河
-titleEn: "Black Soil — Forgathering by One River"
+titleEn: <em>Black Soil — Forgathering by One River</em>
 year: 2022
 medium: 現成物、錄像、影像輸出、聲音裝置
 mediumEn: Video, Rocks, Clay, Sound Installation
@@ -34,5 +34,5 @@ descriptionEn: |
 
   The TOPO art group has been working collectively in the "Zhuoshuixi" watershed for half a year. Seven creators from different aspects of the project do regular readings, linking their thoughts and sharing their research. A group of people explored the traces of belief and land use left by various industries along the Zhuoshui River. We describe different aspects of the river through artistic action.
 
-  The "Black Soil — Forgathering by One River" exhibit showcases objects collected between watersheds, including stones, plants, and even sounds. There is a large map in the exhibition, on which the places visited will be marked with text as an auxiliary, and presented in the form of video documentaries. The group project is ongoing and is expected to be published at the Tainan Gallery by the end of 2023.
+  The <em>Black Soil — Forgathering by One River</em> exhibit showcases objects collected between watersheds, including stones, plants, and even sounds. There is a large map in the exhibition, on which the places visited will be marked with text as an auxiliary, and presented in the form of video documentaries. The group project is ongoing and is expected to be published at the Tainan Gallery by the end of 2023.
 ---
